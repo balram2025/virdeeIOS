@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="2" parallel="tests">
+    <test name="iPhone 13 Mini">
+    <parameter name="deviceIndex" value="0"/>
+        <classes>
+            <class name="Runner.iOS.TestRunner_GoldenNuggetMI_iPhone13Mini"/>
+        </classes>
+    </test>
+
+    <test name="iPhone 13 Pro Max">
+    <parameter name="deviceIndex" value="1"/>
+        <classes>
+            <class name="Runner.iOS.TestRunner_GoldenNuggetMI_iPhone13ProMax"/>
+        </classes>
+    </test>
+</suite>

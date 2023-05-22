@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <listeners>
+        <listener class-name="support.RetryListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="xyz">
+        <classes>
+            <class name="Runner.iOS.TestRunner_Virdee_IOS">
+            </class>
+        </classes>
+    </test>
+
+</suite>
